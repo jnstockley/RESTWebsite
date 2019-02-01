@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>REST Website</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script src="myJs.js"></script>
+	</head>
+	<body>
+		<h1 id="table" >IP Address</h1>
+		<input id="ip" type="radio" name="ip" value="internal">Internal</input><br>
+		<input id="ip" type="radio" name="ip" value="external">External</input><br>
+		<h1 id="table" >Select Table</h1>
+		<input id="table" type="radio" name="table" value="address">Address</input><br>
+		<input id="table" type="radio" name="table" value="person">Person</input><br>
+		<input id="table" type="radio" name="table" value="occupation">Occupation</input>
+		<h1 id="method" >Select Method</h1>
+		<input id="method" type="radio" onchange="removeAll()" name="method" value="getAll">Get All Data</input><br>
+		<input id="method" type="radio" onchange="createID()" name="method" value="getById">Get Data By ID</input></br>
+		<input id="method" type="radio" onchange="createInsert()" name="method" value="put">Insert Data</input><br>
+		<input id="method" type="radio" onchange="createID()" name="method" value="delete">Delete Data</input>
+		<div id="textFieldDiv">
+		<br/>
+		<br/>
+		<button id="submit" onClick="submit()" type="submit">Send</button>
+	</body>
+</html>
