@@ -6,7 +6,7 @@ function submit(){
 	if (document.getElementsByName("ip")[0].checked){
 		ip = "http://10.0.0.50:8080/AddressBookREST/";
 	}else if(document.getElementsByName("ip")[1].checked){
-		ip = "http://www.jackstockley.ddns.net:8080/AddressBookREST/";
+		ip = "http://jackstockley.ddns.net:8080/AddressBookREST/";
 	}else{
 		alert("Please select an IP!");
 	}
