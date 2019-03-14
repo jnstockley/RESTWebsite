@@ -1,16 +1,8 @@
 function submit(){
 	var requestUrl;
-	var ip;
+	var ip = "http://jackstockley.ddns.net:8080/AddressBookREST/"
 	var table;
-	var method;
-	if (document.getElementsByName("ip")[0].checked){
-		ip = "http://10.0.0.50:8080/AddressBookREST/";
-	}else if(document.getElementsByName("ip")[1].checked){
-		ip = "http://jackstockley.ddns.net:8080/AddressBookREST/";
-	}else{
-		alert("Please select an IP!");
-	}
-	
+		
 	if(document.getElementsByName("table")[0].checked){
 		table = "address/";
 	}else if(document.getElementsByName("table")[1].checked){
